@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Mailchimp from './Mailchimp'
+import Home from './Components/Home'
+import Cards from './Components/Cards'
+import Description from './Components/Description'
+import Subscribe from './Components/Subscribe'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Mailchimp/>
+    <div >
+
+    <Home/>
+    <Cards/>
+    <Description/>
+    <Subscribe/>
+
     </div>
   );
 }
