@@ -7,14 +7,14 @@ import Subscribe from './Components/Subscribe'
 
 function App() {
   return (
-    <div >
+    < >
     <GlobalStyle/>
     <Home/>
     <Cards/>
     <Description/>
     <Subscribe/>
 
-    </div>
+    </>
   );
 }
 
