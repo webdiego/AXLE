@@ -1,0 +1,15 @@
+<svg id="Bars-mobile" xmlns="http://www.w3.org/2000/svg" width="414" height="318.5" viewBox="0 0 414 318.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e95223;
+      }
+
+      .cls-2 {
+        fill: #f57952;
+      }
+    </style>
+  </defs>
+  <path id="Path_649" data-name="Path 649" class="cls-1" d="M0,0H414V318.5L0,94.177Z"/>
+  <path id="Path_651" data-name="Path 651" class="cls-2" d="M0-62.795,414,156.2l-.117,99.111L0,36.584V-62.795Z" transform="translate(0 62.911)"/>
+</svg>

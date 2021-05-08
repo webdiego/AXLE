@@ -1,0 +1,15 @@
+<svg id="Bars" xmlns="http://www.w3.org/2000/svg" width="2428.256" height="775.746" viewBox="0 0 2428.256 775.746">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e95223;
+      }
+
+      .cls-2 {
+        fill: #f57952;
+      }
+    </style>
+  </defs>
+  <path id="Path_649" data-name="Path 649" class="cls-1" d="M0,0H2428.255V393.536L0,102.986Z"/>
+  <path id="Path_651" data-name="Path 651" class="cls-2" d="M561-10.911l1866.6,370.033V764.835L0,96.571V-10.911Z" transform="translate(0.662 10.911)"/>
+</svg>
