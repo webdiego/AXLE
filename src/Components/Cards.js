@@ -11,7 +11,7 @@ const Cards = () => {
 
       <ContainerCards>
         <CardsWhy>
-          <img src={Timer} alt="" />
+          <img src={Timer} alt="time" />
           <h2>EVERYONE IS TIME POOR</h2>
           <p>
             The world is becoming busier and busier. People want to save time wherever is possible,
@@ -19,7 +19,7 @@ const Cards = () => {
           </p>
         </CardsWhy>
         <CardsWhy>
-          <img src={Weight} alt="" />
+          <img src={Weight} alt="balance" />
           <h2>HAIRCUTS CAN BE GABLE</h2>
           <p>
             Getting a haircut can be a lottery. At some chain store, you have no idea who's going to
@@ -45,6 +45,10 @@ const WhyAxle = styled.h1`
   padding: 5rem 0;
   span {
     color: #e95223;
+  }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+    padding: 2rem 0;
   }
 `;
 const ContainerCards = styled.div`
