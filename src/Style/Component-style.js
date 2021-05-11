@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerRed = styled.div`
+width:100%;
 background-color: #f57952;
 clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
 display: flex;

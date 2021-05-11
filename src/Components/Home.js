@@ -63,7 +63,7 @@ export default Home;
 const Container = styled.div`
   background-image: url(${Bars});
   background-repeat: no-repeat;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     background-image: url(${BarsMobile});
     background-size: contain;
   } ;
