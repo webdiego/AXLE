@@ -7,7 +7,7 @@ const Footer= ()=> {
   return (
     <FooterStyle>
       <h3>Created by</h3>
-      <img src={SliceCode} alt="" />
+    <a href="https://diego-slicecode.dev/"><img src={SliceCode} alt="" /></a> 
     </FooterStyle>
   )
 }

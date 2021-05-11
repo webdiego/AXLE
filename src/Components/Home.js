@@ -47,7 +47,7 @@ const Home = () => {
             height="100%"
             config={{
               file: {
-                attributes: { autoPlay: "true" },
+                attributes: { autoPlay: true },
               },
             }}
           />

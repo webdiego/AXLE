@@ -1,24 +1,39 @@
+//Mailchimp
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+//StyledComponents
 import styled from "styled-components";
+//Img
+import SubscribeImg from "../img/Barber-Community.png";
 
-import SubscribeImg from "../img/Barber-Comunity.png";
-import AxleSub from "../img/Axle-trip.svg";
 const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIMP_URL} />;
-
+   
 const Subscribe = () => (
   <SubscribeContainer>
     <h2>Join our community and get notified when we launch!</h2>
+
     <MailchimpSubscribe
       url={process.env.REACT_APP_MAILCHIMP_URL}
       render={({ subscribe, status, message }) => (
         <FormSub>
-          
           <SimpleForm onSubmitted={(formData) => subscribe(formData)} />
-          {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-          {status === "error" && (
-            <div style={{ color: "red" }} dangerouslySetInnerHTML={{ __html: message }} />
+      {status === "sending" && (
+            <PopperSending>
+              {" "}
+              <h4>sending..</h4>{" "}
+            </PopperSending>
           )}
-          {status === "success" && <div style={{ color: "green" }}>Subscribed !</div>}
+          {status === "error" && (
+            <PopperError>
+              {" "}
+              <h4>{{ __html: message }}</h4>{" "}
+            </PopperError>
+          )}
+          {status === "success" && (
+            <Popper>
+              {" "}
+              <h4>Subscribed !</h4>{" "}
+            </Popper>
+          )}
         </FormSub>
       )}
     />
@@ -38,8 +53,9 @@ const SubscribeContainer = styled.div`
   background-position: center;
   background-size: cover;
   margin-top: 10rem;
- 
+
   h2 {
+    color:#3D3D3D;
     margin-bottom: 2rem;
     font-size: 2rem;
     text-align: center;
@@ -49,18 +65,20 @@ const SubscribeContainer = styled.div`
       line-height: 3rem;
     }
   }
-
 `;
 const FormSub = styled.div`
-
-  div{
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div {
     @media (max-width: 600px) {
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-    };
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   input {
     background-color: #3d3d3d;
@@ -75,7 +93,7 @@ const FormSub = styled.div`
     outline: none;
     @media (max-width: 600px) {
       padding: 1rem 4rem;
-      font-size:.9rem;
+      font-size: 0.9rem;
     }
   }
   button {
@@ -91,8 +109,25 @@ const FormSub = styled.div`
     @media (max-width: 600px) {
       padding: 1rem 3rem;
       transform: translateX(0px);
-      margin-top:1rem;
-
-    };
+      margin-top: 1rem;
+    }
   }
+`;
+const Popper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0db10d;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 13px;
+  color: white;
+  margin-top: 2rem;
+`;
+const PopperError = styled(Popper)`
+  background-color: #d84214;
+`;
+const PopperSending = styled(Popper)`
+  background-color: #bfbfbf;
+  color:#3D3D3D;
 `;
