@@ -57,6 +57,6 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 flex-wrap: wrap-reverse;
-padding: 10rem 0;
+padding: 3rem 0;
 color:#3D3D3D;
 `;

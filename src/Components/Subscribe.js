@@ -9,8 +9,7 @@ const SimpleForm = () => <MailchimpSubscribe url={process.env.REACT_APP_MAILCHIM
    
 const Subscribe = () => (
   <SubscribeContainer>
-    <h2>Join our community and get notified when we launch!</h2>
-
+    <h2>Pre-register now, join our community and get notified when we launch!</h2>
     <MailchimpSubscribe
       url={process.env.REACT_APP_MAILCHIMP_URL}
       render={({ subscribe, status, message }) => (
@@ -47,12 +46,15 @@ const SubscribeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30rem;
+  height: 20rem;
   background-image: url(${SubscribeImg});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: 10rem;
+  @media (max-width: 600px) {
+    height: 30rem;
+    }
 
   h2 {
     color:#3D3D3D;
@@ -60,9 +62,9 @@ const SubscribeContainer = styled.div`
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
-    @media (max-width: 400px) {
+    line-height: 3rem;
+    @media (max-width: 600px) {
       font-size: 1.5rem;
-      line-height: 3rem;
     }
   }
 `;

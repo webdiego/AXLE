@@ -41,7 +41,6 @@ const WhyAxle = styled.h1`
   text-align: center;
   color: #3d3d3d;
   font-size: 3rem;
-  margin: 3rem 0;
   padding: 5rem 0;
   span {
     color: #e95223;

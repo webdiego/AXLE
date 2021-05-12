@@ -11,9 +11,9 @@ function App() {
     <>
       <GlobalStyle />
       <Home />
+      <Subscribe />
       <Cards />
       <How />
-      <Subscribe />
       <Footer />
     </>
   );
