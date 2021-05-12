@@ -1,17 +1,23 @@
 import React from "react";
+import {useState} from 'react'
 //Player & Styled components
 import ReactPlayer from "react-player/file";
 import styled from "styled-components";
 // PHOTOS,ICONS AND VIDEO
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import Video from "../video/AXLE-VIDEO-EXAMPLE-Lower.mp4";
-import Cover from "../img//IPHONE2-min-2.png";
+import VideoMobile from "../video/AXLE-VIDEO-EXAMPLE-Lower-1.26MB.mp4";
+import VideoDesktop from "../video/AXLE-VIDEO-EXAMPLE-Lower-2.82MB.mp4";
+
+import Cover from "../img/IPHONE-cover.png";
 import Bars from "../img/Bars.svg";
 import BarsMobile from "../img/Bars-mobile.svg";
 import Axle from "../img/AXLE LOGO.png";
 
+
 const Home = () => {
+const [play,setPlay]= useState(false)
+const InnerWidth = window.innerWidth
   return (
     <Container>
       <Social>
@@ -39,19 +45,21 @@ const Home = () => {
 
         <ContainerVideo>
           <ReactPlayer
+           playsInline={true}
             style={{ position: "absolute", width: "20rem", height: "40rem", padding: "16px" }}
-            url={Video}
-            volume={0}
+            url={InnerWidth > "400" ? VideoDesktop : VideoMobile}
             muted={true}
             width="100%"
             height="100%"
+            playing={play}
+            volume={0}
             config={{
               file: {
-                attributes: { autoPlay: true },
+                attributes: { autoPlay:true, muted:true, controls:true, },
               },
             }}
           />
-          <CoverPhone src={Cover} alt="cover" />
+          <CoverPhone src={Cover} alt="cover" onClick={()=>setPlay(true)} />
         </ContainerVideo>
       </ContainerHome>
     </Container>
