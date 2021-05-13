@@ -55,7 +55,7 @@ const InnerWidth = window.innerWidth
             volume={0}
             config={{
               file: {
-                attributes: { autoPlay:true, muted:true, controls:true, },
+                attributes: { autoPlay:true, muted:true, controls:true, loop:true },
               },
             }}
           />

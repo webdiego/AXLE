@@ -88,7 +88,7 @@ const Solution = styled.h1`
 `;
 const ContainerGoal= styled(ContainerWhite)`
 padding:0;
-margin-bottom:2rem;
+margin-bottom:6rem;
 `
 const ImgGoal = styled(PhoneImg)`
 height:30rem;
