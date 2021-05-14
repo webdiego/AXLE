@@ -54,6 +54,8 @@ const SubscribeContainer = styled.div`
   margin-top: 10rem;
   @media (max-width: 600px) {
     height: 30rem;
+    margin-top: 4rem;
+
     }
 
   h2 {
