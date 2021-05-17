@@ -38,8 +38,8 @@ const InnerWidth = window.innerWidth
         <Intro>
           <AxleImg src={Axle} alt="" />
           <p>
-            Connect with a hairdresser in your area who will come to you, set a time a place and the
-            price that suit you.
+            Connect with a hairdresser or barber in your area who will come to you, set the time, the place and the
+            price that suits you.
           </p>
         </Intro>
 

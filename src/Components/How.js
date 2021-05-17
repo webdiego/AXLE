@@ -17,13 +17,13 @@ const How = () => {
         <Description>
           <h2>Save time and effort, get your haircut to come to you​</h2>
           <p>
-            AXLE provides a time efficient way to organize a haircut that works in with your
-            schedule. Simply open up the app, find the hairdresser that you want near you, and book
-            a time within minutes.
+            AXLE provides a time efficient way to organize a haircut that works to your
+            schedule. Simply open up the app, find a hairdresser near you, and book
+            a time within seconds.
           </p>
           <p>
             AXLE connects you directly to the source to coordinate a time and place for your
-            haircut. So, unlike a traditional haircut, AXLE eliminates the travel and wait time to
+            haircut. Unlike a traditional haircut AXLE eliminates the travel and wait time to help
             accommodate to your lifestyle.
           </p>
         </Description>
@@ -46,12 +46,12 @@ const How = () => {
         <Description>
           <h2>Take control​ of your haircut</h2>
           <p>
-            When looking for a haircut, you can view the profile of hairdressers near you, assess
+            When looking for a haircut you can view the profile of the hairdressers near you, assess
             their specialities, availability and price range to find your best match. Or simply
-            click on a hairstyle that matches your style. Plus, you can check out reviews from their
+            click on a hairstyle that suits your style. You can also check out reviews from their
             previous customers before committing. ​
           </p>
-          <p>Then, once you are satisfied, book a convenient time and place for your haircut.</p>
+          <p>Once you are satisfied, book a convenient time and place for your haircut.</p>
         </Description>
       </ContainerRed>
 
@@ -61,11 +61,11 @@ const How = () => {
         <ImgGoal src={Goal} alt="phone-goal" />
         <Description>
           <p>
-            We will be a lifestyle platform, committed to helping clients save time and effort
+            AXLE will be a lifestyle platform committed to helping clients save time and effort
             through an on-demand service.
           </p>
           <p>
-          We want to help make getting a haircut easier, more accessible, and stress-free - for everyone. Whether you’re a hairdresser looking to increase your client base, or a client looking for a convenient way to get a haircut, AXLE  can help you look sharp and feel good.
+          We want to help make getting a haircut easier, more accessible, and stress-free for everyone. Whether you are a hairdresser looking to increase your client base, or a client looking for a convenient way to get a haircut, AXLE is here to help!
           </p>
         </Description>
       </ContainerGoal>

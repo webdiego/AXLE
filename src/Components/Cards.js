@@ -14,16 +14,16 @@ const Cards = () => {
           <img src={Timer} alt="time" />
           <h2>EVERYONE IS TIME POOR</h2>
           <p>
-            The world is becoming busier and busier. People want to save time wherever is possible,
-            without compromising flexibility, choice of hairdresser of quality of cut.
+            The world is becoming busier and busier. We want to save time wherever is possible
+            without compromising flexibility, choice of hairdresser and quality of cut.
           </p>
         </CardsWhy>
         <CardsWhy>
           <img src={Weight} alt="balance" />
-          <h2>HAIRCUTS CAN BE GABLE</h2>
+          <h2>HAIRCUTS CAN BE GAMBLE</h2>
           <p>
-            Getting a haircut can be a lottery. At some chain store, you have no idea who's going to
-            cut your hair, what their strengths are, and if you'll look good at the end of it.
+            Getting a haircut can be a lottery. At some chain retail stores you have no idea who is going to
+            cut your hair, what their strengths are and if you'll look good afterwards.
           </p>
         </CardsWhy>
       </ContainerCards>
