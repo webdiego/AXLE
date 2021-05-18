@@ -14,8 +14,8 @@ const Cards = () => {
           <img src={Timer} alt="time" />
           <h2>EVERYONE IS TIME POOR</h2>
           <p>
-            The world is becoming busier and busier. We want to save time wherever is possible
-            without compromising flexibility, choice of hairdresser and quality of cut.
+            Our world is becoming busier and busier. We want to save time wherever it is possible
+            without compromising flexibility, choice  and quality.
           </p>
         </CardsWhy>
         <CardsWhy>
@@ -23,7 +23,7 @@ const Cards = () => {
           <h2>HAIRCUTS CAN BE GAMBLE</h2>
           <p>
             Getting a haircut can be a lottery. At some chain retail stores you have no idea who is going to
-            cut your hair, what their strengths are and if you'll look good afterwards.
+            cut your hair, what their strengths are and if you will look good afterwards.
           </p>
         </CardsWhy>
       </ContainerCards>

@@ -17,9 +17,8 @@ const How = () => {
         <Description>
           <h2>Save time and effort, get your haircut to come to you​</h2>
           <p>
-            AXLE provides a time efficient way to organize a haircut that works to your
-            schedule. Simply open up the app, find a hairdresser near you, and book
-            a time within seconds.
+            AXLE provides a time efficient way to organize a haircut that works to your schedule.
+            Simply open up the app, find a hairdresser near you, and book a haircut within seconds.
           </p>
           <p>
             AXLE connects you directly to the source to coordinate a time and place for your
@@ -33,9 +32,9 @@ const How = () => {
         <Description>
           <h2>Save money</h2>
           <p>
-            Unlike the traditional way to get a haircut, AXLE connects you directly to mobile
-            hairdressers, eliminating those retail shop charges. ​ ​ The price is set between you
-            and your hairstylist via the app, saving you time and MONEY!
+            AXLE connects you directly to mobile hairdressers, eliminating those retail shop
+            charges. The price is set between you and your hairstylist via the app, saving you time
+            and MONEY!
           </p>
         </Description>
         <PhoneImg src={Money} alt="phone-money" />
@@ -46,12 +45,12 @@ const How = () => {
         <Description>
           <h2>Take control​ of your haircut</h2>
           <p>
-            When looking for a haircut you can view the profile of the hairdressers near you, assess
-            their specialities, availability and price range to find your best match. Or simply
-            click on a hairstyle that suits your style. You can also check out reviews from their
-            previous customers before committing. ​
+            By simply clicking on the hairstyle you like you can view the profile of the
+            hairdressers near you, assess their specialities, availability and price range to find
+            your best match. You can also check out reviews from previous customers before
+            committing. ​
           </p>
-          <p>Once you are satisfied, book a convenient time and place for your haircut.</p>
+          <p>Once you are satisfied, book your haircut and get back to living your life.</p>
         </Description>
       </ContainerRed>
 
@@ -61,11 +60,13 @@ const How = () => {
         <ImgGoal src={Goal} alt="phone-goal" />
         <Description>
           <p>
-            AXLE will be a lifestyle platform committed to helping clients save time and effort
+            AXLE will be a lifestyle platform committed to helping people save time and effort
             through an on-demand service.
           </p>
           <p>
-          We want to help make getting a haircut easier, more accessible, and stress-free for everyone. Whether you are a hairdresser looking to increase your client base, or a client looking for a convenient way to get a haircut, AXLE is here to help!
+            We want to help make getting a haircut easier, more accessible, and stress-free for
+            everyone. Whether you are a hairdresser looking to increase your client base, or someone
+            that just needs of a haircut, AXLE is here to help!
           </p>
         </Description>
       </ContainerGoal>
@@ -86,18 +87,17 @@ const Solution = styled.h1`
     padding: 2rem 0;
   }
 `;
-const ContainerGoal= styled(ContainerWhite)`
-padding:0;
-margin-bottom:6rem;
-`
+const ContainerGoal = styled(ContainerWhite)`
+  padding: 0;
+  margin-bottom: 6rem;
+`;
 const ImgGoal = styled(PhoneImg)`
-height:30rem;
-@media (max-width: 500px) {
-height:20rem;
-
-}
-`
+  height: 30rem;
+  @media (max-width: 500px) {
+    height: 20rem;
+  }
+`;
 const GoalTitle = styled(Solution)`
-margin:0;
-padding:1rem;
-`
+  margin: 0;
+  padding: 1rem;
+`;
